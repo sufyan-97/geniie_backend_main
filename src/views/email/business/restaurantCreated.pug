@@ -1,0 +1,50 @@
+extends ../layout/index.pug 
+
+block append contentStyle
+    style(type='text/css').
+        .section {
+        }
+        .section_head .section_logo {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 60%;
+        }
+
+        .section_body{
+            text-align: center;
+        }
+
+        
+        .section_body .section_pg {
+            margin-top: 30px;
+            text-align: center;
+            letter-spacing: 0px;
+            color: #10100F;
+        }
+
+        .section_foot {
+            text-align: center;
+            width: 100%;
+        }
+        .section_foot p.bordered {
+            margin-left: auto;
+            margin-right: auto;
+            background: #01A1E800 0% 0% no-repeat padding-box;
+            border: 3px dashed #01A1E8;
+            border-radius: 8px;
+            opacity: 1;
+            padding: 2px 5px 5px 2px;
+            color: #01A1E8;
+            width: 25%;
+        }
+
+
+block append section
+    .section
+        .section_head
+            img.section_logo(src=`${host}/images/restaurantCreated.png` alt='logo')
+        .section_body
+            h2.section_title Congratulations! Your restaurant #{restaurantName}, registration has been approved against #{restaurantEmail}.
+            p.section_pg Use the restaurant app to login your restaurant admin 
+        .section_foot

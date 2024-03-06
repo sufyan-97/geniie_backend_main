@@ -1,0 +1,70 @@
+extends ../layout/index.pug 
+
+block append contentStyle
+    style(type='text/css').
+        .section {
+        }
+        .section_head .section_logo {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+        }
+        .section_body .setup_business {
+            text-align: center;
+            letter-spacing: 0px;
+            color: #01A1E8;
+        }
+
+        .section_body {
+            text-align: center;
+        }
+
+        .section_body .section_title {
+            font-weight: bold;
+            letter-spacing: 0px;
+            color: #01A1E8;
+        }
+
+        .section_body h3 .golden {
+            color: #FD9616;
+        }
+        .section_body h3 {
+
+            text-align: center;
+            letter-spacing: 0px;
+            color: #10100F;
+            opacity: 1;
+        }
+
+        .section_body .section_pg {
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+        }
+
+        .section_foot {
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        .section_foot h3 {
+            
+            padding: 10px;
+            text-decoration: none;
+        }
+        
+
+
+block append section
+    .section
+        .section_head
+            img.section_logo(src=`${host}/images/welcome.png` alt='logo')
+        .section_body
+            h2.section_title Your application has been submitted
+            h3 
+                span.golden Your Account 
+                | is in under review 
+            p.section_pg Just a quick email to let you know that we have received your request. Our admin department will review your documents. We'll get back to you within 10 working days with confirmation of your account approval.
+        .section_foot
+            h3 Thanks for your patience

@@ -1,0 +1,200 @@
+extends ../layout/index.pug 
+
+block append contentStyle
+    style(type='text/css').
+        .container {
+            padding: 10px;
+            width: 40%;
+        }
+        .section {
+        }
+        .section_head .section_cover {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 85%;
+            height: 400px;
+        }
+        
+
+        .section_body{ 
+            
+        }
+
+        .section_body .body_title {
+            text-align: center;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .body_title .title_username {
+            color: #02A1E8;
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        .body_title .invoice_title {
+            margin: 0px;
+            padding: 0px;
+            line-height: 2;
+        }
+
+        .body_title .restaurant_name {
+            color: #02A1E8;
+            margin: 0px;
+            padding: 0px;
+            line-height: 1;
+        }
+
+        .body_title .title_details {
+            line-height: 1;
+        }
+
+        .title_details .delivery_time {
+            color: #02A1E8;
+            font-weight: bold;
+        }
+
+        .body_content {
+
+        }
+
+        .invoice_body {
+            display: flex;
+            margin-bottom: 15px;
+        }
+
+        .invoice_summery {
+            width: 45%;
+        }
+
+        .invoice_border {
+            border-left: 1px solid black;
+            margin-right: 20px;
+        }
+        .items_t table {
+            width: 100%;
+            border-spacing: 0px;
+            border-collapse: collapse;
+        }
+        .items_t table thead {
+            background: #02A1E8;
+            color: white;
+            height: 35px;
+        }
+
+        .items_t table tbody {
+            border-bottom: 1px solid black;
+            margin-bottom: 5px;
+        }
+        
+        .items_t table thead tr th.first, .items_t table tbody tr td.first{
+            text-align: center;
+            width: 5%;
+        }
+        
+        .items_t table thead tr th.second, .items_t table tbody tr td.second{
+            width: 3%;
+        }
+        
+        .items_t table thead tr th.third, .items_t table tbody tr td.third{
+            text-align: left;
+        }
+        
+        .items_t table thead tr th.fourth, .items_t table tbody tr td.fourth{
+            text-align: right;
+        }
+        
+        .items_t table thead tr th.fifth, .items_t table tbody tr td.fifth{
+            text-align: right;
+        }
+
+        .items_t table tfoot tr .fourth{
+            text-align: right;
+        }
+        .items_t table tfoot tr .fifth{
+            text-align: right;
+        }
+        tr{
+            font-weight: bold;
+        }
+
+block append section
+    .section
+        .section_head
+            img.section_cover(src=`${host}/images/consumerOrderPlaced.png` alt='logo')
+        .section_body
+            .body_title
+                h3.title_username #{username}
+                h1.invoice_title Your order is confirmed with
+                h2.restaurant_name #{restaurantName}
+                p.title_details your Estimated Delivery time is 
+                    span.delivery_time #{deliveryTime}
+            .body_content
+                h2.invoice_title Here's your receipt
+                
+                .invoice_body
+                    .invoice_summery
+                        h4 Summary
+                        p Order number: #{orderNo}
+                        p Order date: #{orderDate}
+                    .invoice_border
+                    .invoice_address
+                        h4 Delivery Address:
+                        p #{username}
+                        | #{deliveryAddress}
+                        
+                .items_t 
+                    table
+                        thead
+                            tr
+                                th.first Qty
+                                th.second
+                                th.third Item
+                                th.fourth Unit Price
+                                th.fifth Total Price
+                        tbody
+                            each item in products
+                                tr
+                                    td.first=  item.quantity
+                                    td.second= 'x'
+                                    td.third= item.productData.name
+                                    td.fourth=  currencySymbol + item.productData.price
+                                    td.fifth  #{currencySymbol + parseFloat(item.productData.price * item.quantity).toFixed(2)}
+                        tfoot
+                            tr 
+                                td.first
+                                td.second
+                                td.third
+                                td.fourth Subtotal:
+                                td.fifth #{ currencySymbol + subTotal}
+                            tr 
+                                td.first
+                                td.second
+                                td.third  
+                                td.fourth incl. delivery fee: 
+                                td.fifth #{ currencySymbol + deliveryCharges}
+                            //- tr 
+                            //-     td.first
+                            //-     td.second
+                            //-     td.third Platform fee:
+                            //-     td.fourth £ 50.00
+                            //- tr 
+                            //-     td.first
+                            //-     td.second
+                            //-     td.third Voucher:
+                            //-     td.fourth #{discount}
+                            //-     td.fifth 
+                            tr 
+                                td.first
+                                td.second
+                                td.third  
+                                td.fourth Including 20% VAT: 
+                                td.fifth #{ currencySymbol + vat}
+                            tr 
+                                td.first
+                                td.second
+                                td.third 
+                                td.fourth Order Total: 
+                                td.fifth #{ currencySymbol +total}
+        .section_foot

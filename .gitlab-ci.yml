@@ -1,0 +1,43 @@
+image: node:14.18
+
+variables:
+  WORK_DIR: ${CI_PROJECT_NAME}
+  BRANCH: ${CI_COMMIT_REF_NAME}
+
+stages:
+  - deploy
+  - devDeploy
+
+deployAsapBackendLive:
+  stage: deploy
+  environment:
+    name: deployAsapBackendLive
+    url: https://whistle-tech.com/api
+  before_script:
+    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+    - eval $(ssh-agent -s)
+    - ssh-add <(echo "$PRIVATE_KEY")
+    - mkdir -p ~/.ssh
+    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+  script:
+    - echo "Deploy to live server"
+    - ssh web@188.166.147.98 "cd /var/www/html/${WORK_DIR} && git reset --hard && git pull origin ${BRANCH} && npm install && npx sequelize-cli db:migrate && pm2 reload all &&  exit"
+  only:
+    - main
+
+deployAsapBackendDev:
+  stage: devDeploy
+  environment:
+    name: deployAsapBackendDev
+    url: https://whistle-tech.com/api
+  before_script:
+    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+    - eval $(ssh-agent -s)
+    - ssh-add <(echo "$PRIVATE_KEY")
+    - mkdir -p ~/.ssh
+    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+  script:
+    - echo "Deploy to live server"
+    - ssh web@167.172.59.65 "cd /var/www/html/${WORK_DIR} && git reset --hard && git pull origin ${BRANCH} && npm install && npx sequelize-cli db:migrate && pm2 reload all &&  exit"
+  only:
+    - development

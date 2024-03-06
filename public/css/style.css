@@ -1,0 +1,717 @@
+html {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* header */
+.container1 img {
+  /* Layout Properties */
+  margin-top: 46px;
+  margin-left: 196px;
+  width: 209px;
+  height: 48px;
+  /* UI Properties */
+  background: transparent 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.container2 img {
+  width: 559px;
+  height: 375px;
+  background: transparent 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.container3 .step-busines {
+  margin-top: 20px;
+  height: 34px;
+  color: var(--unnamed-color-01a1e8);
+  text-align: center;
+  font: normal normal bold 28px/34px Roboto;
+  letter-spacing: 0px;
+  color: hsl(198, 99%, 46%);
+  opacity: 1;
+}
+
+.container3 .col-4 {
+  margin-top: 20px;
+}
+
+.container3 .col-4 .Use-link {
+  height: 24px;
+  color: var(--unnamed-color-fd9616);
+  text-align: center;
+  font: normal normal bold 20px/24px Roboto;
+  letter-spacing: 0px;
+  color: #FD9616;
+}
+
+.container3 .col-4 .sign-up {
+  height: 19px;
+  height: 24px;
+  text-align: center;
+  font: normal normal bold 20px/24px Roboto;
+  letter-spacing: 0px;
+  opacity: 1;
+}
+
+.container3 .col-8 .browser-para {
+  margin-top: 20px;
+  color: var(--unnamed-color-10100f);
+  text-align: center;
+  font: normal normal normal 16px/19px Roboto;
+  letter-spacing: 0px;
+  color: #10100F;
+  opacity: 1;
+}
+
+.container3 .link {
+  margin-top: 0px;
+  margin-bottom: 120px;
+}
+
+.container3 .col-4 a {
+  color: var(--unnamed-color-01a1e8);
+  text-align: center;
+  font: normal normal normal 25px/24px Roboto;
+  letter-spacing: 0px;
+  color: #01A1E8;
+  opacity: 1;
+}
+
+.container4 .application-submit-para {
+  height: 34px;
+  /* UI Properties */
+  color: var(--unnamed-color-01a1e8);
+  text-align: center;
+  font: normal normal bold 28px/34px Roboto;
+  letter-spacing: 0px;
+  color: #01A1E8;
+  opacity: 1;
+}
+
+.container4 .Account-review {
+  margin-top: 15px;
+}
+
+.container4 .col-4 .Account {
+  width: 158px;
+  height: 24px;
+  color: var(--unnamed-color-fd9616);
+  text-align: center;
+  font: normal normal bold 20px/24px Roboto;
+  letter-spacing: 0px;
+  color: #FD9616;
+}
+
+.container4 .col-4 .review {
+  color: var(--unnamed-color-10100f);
+  text-align: center;
+  font: normal normal bold 20px/24px Roboto;
+  letter-spacing: 0px;
+  color: #10100F;
+}
+
+.container4 .col-4 .email-para {
+  color: var(--unnamed-color-10100f);
+  text-align: center;
+  font: normal normal normal 22px/19px Roboto;
+  letter-spacing: 0px;
+  color: #10100F;
+  opacity: 1;
+}
+
+.container4 .email-para {
+  margin-top: 25px;
+
+}
+
+.container4 .patience {
+  margin-top: 0px;
+  margin-bottom: 80px;
+}
+
+.container4 .patience p {
+  color: var(--unnamed-color-10100f);
+  text-align: center;
+  font: normal normal bold 20px/24px Roboto;
+  letter-spacing: 0px;
+  color: #10100F;
+  opacity: 1;
+}
+
+.container5 img {
+  margin-top: 70px;
+  width: 301px;
+  height: 188px;
+  /* UI Properties */
+  background: transparent 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.container6 .get-start {
+  margin-top: 30px;
+  height: 34px;
+  /* UI Properties */
+  color: var(--unnamed-color-10100f);
+  text-align: center;
+  font: normal normal bold 28px/34px Roboto;
+  letter-spacing: 0px;
+  color: #10100F;
+  opacity: 1;
+}
+
+.container6 .sayyad-para {
+  margin-top: 10px;
+}
+
+.container6 .sayyad-para {
+  height: 22px;
+  color: var(--unnamed-color-10100f);
+  text-align: center;
+  font: normal normal bold 19px/22px Roboto;
+  letter-spacing: 0px;
+  color: #10100F;
+  opacity: 1;
+
+}
+
+.container6 .col-4 .account-setup {
+  /* width: 504px; */
+  height: 44px;
+  /* UI Properties */
+  color: var(--unnamed-color-919191);
+  text-align: center;
+  font: normal normal normal 19px/22px Roboto;
+  letter-spacing: 0px;
+  color: #919191;
+  opacity: 1;
+}
+
+.container6 .account-setup {
+  margin-top: 25px;
+
+}
+
+.container6 .login-button {
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+.container6 button {
+  width: 283px;
+  height: 46px;
+  background: var(--unnamed-color-01a1e8) 0% 0% no-repeat padding-box;
+  background: #01A1E8 0% 0% no-repeat padding-box;
+  border-radius: 8px;
+  opacity: 1;
+  border-color: #01A1E8;
+  color: var(--unnamed-color-ffffff);
+  text-align: center;
+  font: normal normal bold 18px/36px Roboto;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.container7 .account-detail-para {
+  margin-top: 30px;
+  height: 34px;
+  color: var(--unnamed-color-10100f);
+  text-align: center;
+  font: normal normal bold 28px/34px Roboto;
+  letter-spacing: 0px;
+  color: #10100F;
+  opacity: 1;
+}
+
+.container7 .password-para {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 22px;
+  /* UI Properties */
+  color: var(--unnamed-color-919191);
+  text-align: center;
+  font: normal normal 18px/22px Roboto;
+  letter-spacing: 0px;
+  color: #919191;
+  opacity: 1;
+}
+
+.container7 .your-password {
+  margin-top: 20px;
+  margin-bottom: 80px;
+  /* width: 313px; */
+  height: 46px;
+  border: 2.5px dashed var(--unnamed-color-01a1e8);
+  background: #01A1E800 0% 0% no-repeat padding-box;
+  border: 3px dashed #01A1E8;
+  border-radius: 8px;
+  opacity: 1;
+}
+
+.container7 .password {
+  height: 22px;
+  color: var(--unnamed-color-01a1e8);
+  text-align: center;
+  font: normal normal bold 18px/36px Roboto;
+  letter-spacing: 0px;
+  color: #01A1E8;
+  opacity: 1;
+}
+
+.container8 img {
+  margin-top: 50px;
+  width: 255px;
+  height: 188px;
+  /* UI Properties */
+  background: transparent 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.container11 .approved-fail-para {
+  /* width: 312px; */
+  margin-top: 30px;
+  height: 34px;
+  text-align: center;
+  font: normal normal 32px/34px Roboto;
+  letter-spacing: 0px;
+  color: #FF3B30;
+  opacity: 1;
+}
+
+.container11 .restaurant-para {
+  margin-top: 10px;
+}
+
+.container11 .restaurant-para {
+  /* width: 504px; */
+  height: 22px;
+  color: var(--unnamed-color-10100f);
+  text-align: center;
+  font: normal normal bold 18px/22px Roboto;
+  letter-spacing: 0px;
+  color: #10100F;
+  opacity: 1;
+
+
+}
+
+.container11 .lorem-para {
+  margin-top: 30px;
+  width: 504px;
+  height: 46px;
+  color: var(--unnamed-color-919191);
+  text-align: center;
+  font: normal normal normal 18px/22px Roboto;
+  letter-spacing: 0px;
+  color: #919191;
+  opacity: 1;
+
+}
+
+.container11 .download-button {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.container11 button {
+  width: 283px;
+  height: 46px;
+  background: var(--unnamed-color-01a1e8) 0% 0% no-repeat padding-box;
+  background: #01A1E8 0% 0% no-repeat padding-box;
+  border-radius: 8px;
+  opacity: 1;
+  border-color: #01A1E8;
+  color: var(--unnamed-color-ffffff);
+  text-align: center;
+  font: normal normal bold 18px/36px Roboto;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.container12 img {
+  margin-top: 50px;
+  width: 255px;
+  height: 188px;
+  /* UI Properties */
+  background: transparent 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.container13 .application-issue-para {
+  /* width: 366px; */
+  height: 34px;
+  text-align: center;
+  font: normal normal 28px/34px Roboto;
+  letter-spacing: 0px;
+  color: #FF3B30;
+  opacity: 1;
+}
+
+.container13 .restaurant-para {
+  margin-top: 10px;
+}
+
+.container13 .restaurant-para {
+  /* width: 504px; */
+  height: 22px;
+  color: var(--unnamed-color-10100f);
+  text-align: center;
+  font: normal normal bold 18px/22px Roboto;
+  letter-spacing: 0px;
+  color: #10100F;
+  opacity: 1;
+
+
+}
+
+.container13 .lorem-para {
+  margin-top: 30px;
+  margin-left: 35px;
+  width: 504px;
+  height: 46px;
+  color: var(--unnamed-color-919191);
+  text-align: center;
+  font: normal normal normal 19px/22px Roboto;
+  letter-spacing: 0px;
+  color: #919191;
+  opacity: 1;
+
+}
+
+.container13 .download-button {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.container13 button {
+  width: 283px;
+  height: 46px;
+  background: var(--unnamed-color-01a1e8) 0% 0% no-repeat padding-box;
+  background: #01A1E8 0% 0% no-repeat padding-box;
+  border-radius: 8px;
+  opacity: 1;
+  border-color: #01A1E8;
+  color: var(--unnamed-color-ffffff);
+  text-align: center;
+  font: normal normal bold 18px/36px Roboto;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.container14 img {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 199px;
+  height: 185px;
+  background: transparent 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.container15 .account-suspended-para {
+  /* width: 430px; */
+  height: 34px;
+  /* UI Properties */
+  text-align: center;
+  font: normal normal 28px/34px Roboto;
+  letter-spacing: 0px;
+  color: #FF3B30;
+  opacity: 1;
+}
+
+.container15 .restaurant-para {
+  margin-top: 10px;
+}
+
+.container15 .restaurant-para {
+  /* width: 504px; */
+  height: 22px;
+  color: var(--unnamed-color-10100f);
+  text-align: center;
+  font: normal normal bold 18px/22px Roboto;
+  letter-spacing: 0px;
+  color: #10100F;
+  opacity: 1;
+
+
+}
+
+.container15 .lorem-para {
+  margin-top: 30px;
+  /* margin-left: 35px; */
+  width: 504px;
+  height: 46px;
+  color: var(--unnamed-color-919191);
+  text-align: center;
+  font: normal normal normal 19px/22px Roboto;
+  letter-spacing: 0px;
+  color: #919191;
+  opacity: 1;
+
+}
+
+.container15 .download-button {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.container15 button {
+  width: 283px;
+  height: 46px;
+  background: var(--unnamed-color-01a1e8) 0% 0% no-repeat padding-box;
+  background: #01A1E8 0% 0% no-repeat padding-box;
+  border-radius: 8px;
+  opacity: 1;
+  border-color: #01A1E8;
+  color: var(--unnamed-color-ffffff);
+  text-align: center;
+  font: normal normal bold 18px/36px Roboto;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.container16 img {
+  margin-top: 50px;
+  width: 427px;
+  height: 188px;
+  background: transparent 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.container17 .weekly-transfer-para {
+  margin-top: 30px;
+  margin-left: 40px;
+  width: 500px;
+  height: 68px;
+  color: var(--unnamed-color-10100f);
+  text-align: center;
+  font: normal bold 28px/34px Roboto;
+  letter-spacing: 0px;
+  color: #10100F;
+  opacity: 1;
+}
+
+.container17 .account-set-para {
+  margin-top: 10px;
+  /* margin-left: 15px; */
+}
+
+.container17 .account-set-para {
+  /* width: 504px; */
+  height: 44px;
+  color: var(--unnamed-color-919191);
+  text-align: center;
+  font: normal normal 18px/22px Roboto;
+  letter-spacing: 0px;
+  color: #919191;
+  opacity: 1;
+}
+
+.container17 .login-button {
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+.container17 button {
+  width: 283px;
+  height: 46px;
+  background: var(--unnamed-color-01a1e8) 0% 0% no-repeat padding-box;
+  background: #01A1E8 0% 0% no-repeat padding-box;
+  border-radius: 8px;
+  border-color: #01A1E8;
+  opacity: 1;
+  color: var(--unnamed-color-ffffff);
+  text-align: center;
+  font: normal normal bold 18px/36px Roboto;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.container18 .transfer-detail-para {
+  /* width: 199px; */
+  height: 34px;
+  color: var(--unnamed-color-10100f);
+  text-align: center;
+  font: normal normal 28px/34px Roboto;
+  letter-spacing: 0px;
+  color: #10100F;
+  opacity: 1;
+}
+
+.container18 .payment-transfer {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  /* width: 504px; */
+  height: 22px;
+  color: var(--unnamed-color-919191);
+  text-align: center;
+  font: normal normal 18px/22px Roboto;
+  letter-spacing: 0px;
+  color: #919191;
+  opacity: 1;
+}
+
+.container18 .your-earning {
+  /* width: 283px; */
+  height: 46px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  border: 2.5px dashed var(--unnamed-color-01a1e8);
+  background: #01A1E800 0% 0% no-repeat padding-box;
+  border: 3px dashed #01A1E8;
+  border-radius: 8px;
+  opacity: 1;
+}
+
+.container18 .earnings {
+  /* width: 46px; */
+  height: 22px;
+  /* margin-bottom: 0px; */
+  color: var(--unnamed-color-01a1e8);
+  text-align: center;
+  font: normal normal bold 18px/36px Roboto;
+  letter-spacing: 0px;
+  color: #01A1E8;
+  opacity: 1;
+}
+
+.container19 img {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 301px;
+  height: 188px;
+  background: transparent 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.container20 .forget-para {
+  /* width: 286px; */
+  height: 34px;
+  color: var(--unnamed-color-10100f);
+  text-align: center;
+  font: normal bold 28px/34px Roboto;
+  letter-spacing: 0px;
+  color: #10100F;
+}
+
+.container20 .reset-para {
+  margin-top: 10px;
+  /* margin-left: 15px; */
+}
+
+.container20 .reset-para p {
+  /* width: 450px; */
+  height: 44px;
+  margin-left: 50px;
+  margin-right: 50px;
+  color: var(--unnamed-color-919191);
+  text-align: center;
+  font: normal 18px/22px Roboto;
+  letter-spacing: 0px;
+  color: #919191;
+  opacity: 1;
+}
+
+.container20 .login-button {
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+.container20 button {
+  width: 283px;
+  height: 46px;
+  background: var(--unnamed-color-01a1e8) 0% 0% no-repeat padding-box;
+  background: #01A1E8 0% 0% no-repeat padding-box;
+  border-radius: 8px;
+  border-color: #01A1E8;
+  opacity: 1;
+  color: var(--unnamed-color-ffffff);
+  text-align: center;
+  font: normal bold 18px/36px Roboto;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+/*foter */
+.container9 .col-12 {
+  /* Layout Properties */
+  margin-left: 0px;
+  height: 139px;
+  /* UI Properties */
+  background: var(--unnamed-color-fd9616) 0% 0% no-repeat padding-box;
+  background: #FD9616 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.container9 .col-8 {
+  /* Layout Properties */
+  height: 96px;
+  /* UI Properties */
+  opacity: 1;
+}
+
+.container9 p {
+  margin-top: 20px;
+  /* margin-left: 20px; */
+  /* width: 380px; */
+  height: 30px;
+  /* UI Properties */
+  color: var(--unnamed-color-ffffff);
+  text-align: center;
+  font: normal normal bold 30px/30px Roboto;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.container9 .play-logo {
+  margin-top: 5px;
+  float: right;
+  width: 160px;
+  height: 53px;
+  /* UI Properties */
+  background: transparent 0% 0% no-repeat padding-box;
+  opacity: 1;
+
+}
+
+.container9 .app-logo {
+  margin-top: 5px;
+  float: left;
+  width: 160px;
+  height: 53px;
+  /* UI Properties */
+  background: transparent 0% 0% no-repeat padding-box;
+  opacity: 1;
+
+}
+
+.container10 {
+  margin-top: 30px;
+  height: 146px;
+}
+
+.container10 p {
+  margin: 0px;
+  padding: 0px;
+  color: var(--unnamed-color-919191);
+  text-align: center;
+  font: normal normal normal 16px/19px Roboto;
+  letter-spacing: 0px;
+  color: #919191;
+  opacity: 1;
+}
+
+.container10 img {
+  margin-top: 30px;
+  margin-left: 20px;
+  width: 50px;
+  height: 50px;
+}
+
+/* footer end */

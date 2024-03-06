@@ -1,0 +1,64 @@
+extends ../layout/index.pug 
+
+block append contentStyle
+    style(type='text/css').
+        .section {
+        }
+        .section_head .logo {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+        }
+
+        .section_body {
+            text-align: center;
+
+        }
+        .section_body .title {
+            letter-spacing: 0px;
+            color: #000000;
+        }
+
+        
+        .section_body .para_bold {
+            margin-top: 30px;
+            letter-spacing: 0px;
+            color: #10100F;
+        }
+        .para_bold span {
+            font-weight: bold;
+        }
+        
+        .section_body .infoText{
+            margin-top: 30px;
+            text-align: center;
+            letter-spacing: 0px;
+            color: #01a1e8;
+        }
+        .section_foot {
+            text-align: center;
+            margin-top: 25px;
+            margin-bottom: 50px;
+        }
+        .section_foot a {
+            padding: 10px;
+            background: #01A1E8 0% 0% no-repeat padding-box;
+            border-radius: 8px;
+            opacity: 1;
+            color: white;
+            text-decoration: none;
+        }
+
+
+block append section
+    .section
+        .section_head
+            img.logo(src=`${host}/images/pendingBooking.png` alt='logo')
+        .section_body
+            h2.title #{username}
+            p.para_bold Your booking with 
+                | <span>#{restaurantName}</span> is pending.
+            p We will inform you as soon as restaurant accepts your booking.
+            h2.title Thanks for your patience
+        .section_foot

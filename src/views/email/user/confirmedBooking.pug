@@ -1,0 +1,83 @@
+extends ../layout/index.pug 
+
+block append contentStyle
+    style(type='text/css').
+        .section {
+        }
+        .section_head .logo {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+        }
+
+        .section_body {
+            text-align: center;
+
+        }
+        .section_body .title {
+            letter-spacing: 0px;
+            color: #000000;
+        }
+
+        
+        .section_body .para_bold {
+            margin: 10px 0px 0px 0px;
+            letter-spacing: 0px;
+            color: #10100F;
+        }
+        .para_bold span {
+            font-weight: bold;
+        }
+        
+        .section_body .infoText{
+            margin-top: 30px;
+            text-align: center;
+            letter-spacing: 0px;
+            color: #01a1e8;
+        }
+        .section_foot {
+            text-align: center;
+            margin-top: 25px;
+            margin-bottom: 50px;
+        }
+        .foot_content {
+            display: inline-flex;
+            width: 80%;
+            height: 120px;
+            background: #01a1e8;
+            color: white;
+        }
+        .foot_content .f_content {
+            width: 33.3%;
+            border-right: 2px solid white;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+        .f_content:last-child {
+            border-right: none;
+        }
+
+
+block append section
+    .section
+        .section_head
+            img.logo(src=`${host}/images/pendingBooking.png` alt='logo')
+        .section_body
+            h2.title Thank you #{username}
+            p.para_bold Your booking has been confirmed by 
+                | <span>#{restaurantName}</span>.
+            p.para_bold Booking Number: <br /><br />
+                | <span>#{bookingId}</span>
+        .section_foot
+            .foot_content
+                .f_content
+                    h3 Date
+                    h3 #{bookingDate}
+                .f_content
+                    h3 Time
+                    h3 #{bookingTime}
+                .f_content
+                    h3 Guest
+                    h3 #{guests}
+

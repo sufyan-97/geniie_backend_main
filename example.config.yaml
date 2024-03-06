@@ -1,0 +1,166 @@
+default:
+  app:
+    hostName: localhost
+    hostURL: http://localhost:3000
+
+    env: local
+    title: Geniie.uk
+    port: 3000
+    version: 4.1
+
+    webURL: https://geniie.uk
+    panelURL: https://panel.geniie.uk
+    providerURL: https://provider.geniie.uk
+    riderURL: https://rider.geniie.uk
+
+    rpcHost: localhost
+    rpcPort: 3001
+
+    ipInfoChecker: http://ipinfo.io/
+    defaultCountry: PK
+    timezone: Europe/London
+    timezoneOffset: +0:00
+
+  secret:
+    key: keepItSecretWithAuth!@#
+    expiresIn: 3h
+
+  basicAuth:
+    username: microservice
+    password: password
+
+  support:
+    baseURL: http://localhost:8000
+    hash: cm9vdDpwd2Q=
+  
+  emails:
+    support:
+      - support.geniie@dotkreativ.com
+
+  social:
+    facebook: null
+    twitter: null
+    linkedIn: null
+    instagram: null
+  
+  mysql:
+    host: localhost
+    port: 3306
+    name: asap_db
+    username: root
+    password: null
+    ssl: null
+
+  mongo:
+    host: localhost
+    port: 27017
+    name: asap_db
+    username: null
+    password: null
+    authSource: null
+
+  redis:
+    host: null
+    port: null
+    prefix: null
+    username: null
+    password: null
+    KEY: null
+
+  smtp1:
+    host: null
+    port: null
+    username: null
+    password: null
+
+    # SMTP Info
+    fromEmail: null
+    fromName: ASAAP
+
+  smtp2:
+    host: null
+    port: null
+    username: null
+    password: null
+
+    # SMTP Info
+    fromEmail: null
+
+  oAuth:
+    twitter:
+      clientId: null
+      clientSecret: null
+
+    facebook:
+      clientId: abc
+      clientSecret: abc
+
+    google:
+      clientId: abc
+      clientSecret: abc
+
+    github:
+      clientId: null
+      clientSecret: null
+
+  twilio:
+    sid: ACabc
+    authToken: abc
+    optAttempts: 3
+    messageServiceId: abc
+    autofillCode:
+
+  stripe:
+    publishKey: null
+    secretKey: null
+
+  paypal:
+    mode: sandbox
+    clientId: null
+    clientSecret: null
+
+  coinPayment:
+    key: to_be_added
+    secret: to_be_added
+
+  plugins:
+    - title: restaurant
+      protocol: http
+      port: 3005
+      microserviceBaseUrl: localhost
+      endPoint: restaurant
+
+    - title: rider
+      protocol: http
+      port: 3002
+      microserviceBaseUrl: localhost
+      endPoint: rider
+
+  rpcClients:
+    - serviceName: OrderRPC
+      host: localhost
+      port: 3003
+      publicKey: null
+      cert: null
+      protoFile: order.proto
+
+    - serviceName: RestaurantService
+      host: localhost
+      port: 3003
+      publicKey: null
+      cert: null
+      protoFile: restaurant.proto
+
+    - serviceName: RestaurantAppService
+      host: localhost
+      port: 3003
+      publicKey: null
+      cert: null
+      protoFile: restaurantApp.proto
+
+    - serviceName: RiderAppService
+      host: localhost
+      port: 3005
+      publicKey: null
+      cert: null
+      protoFile: riderApp.proto

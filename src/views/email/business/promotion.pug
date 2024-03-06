@@ -1,0 +1,56 @@
+extends ../layout/index.pug 
+
+block append contentStyle
+    style(type='text/css').
+        .section {
+        }
+        .section_head {
+            text-align: center;
+        }
+        .section_head .section_logo {
+            margin-top: 30px;
+            width: 60%;
+        }
+
+        .section_body {
+            text-align: center;
+        }
+
+        .section_body .section_title {
+            font-weight: bold;
+            letter-spacing: 0px;
+        }
+        .section_body h3 {
+
+            text-align: center;
+            letter-spacing: 0px;
+            color: #01a1e8;
+            opacity: 1;
+        }
+
+        .section_foot {
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        .section_foot a {
+            
+            padding: 10px;
+            background: #01A1E8 0% 0% no-repeat padding-box;
+            border-radius: 8px;
+            opacity: 1;
+            color: white;
+            text-decoration: none;
+        }
+
+
+block append section
+    .section
+        .section_head
+            img.section_logo(src=`${host}/images/promotion.png` alt='logo')
+        .section_body
+            h2.section_title Geniie has a new promotion for you
+            h3 Congratulations!
+            p.section_pg Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum temporibus nulla ut reiciendis architecto officia eligendi? Ipsa distinctio exercitationem ab culpa doloribus, deleniti eaque laboriosam repellat amet? Illo, nesciunt iste.
+        .section_foot
+            a(href=`${guideLineUrl}`) Enroll now

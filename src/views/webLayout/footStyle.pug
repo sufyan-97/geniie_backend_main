@@ -1,0 +1,69 @@
+style(type='text/css').
+    .footer {
+        position: fixed;
+        bottom: 0;
+        left: 25%;
+        width: 50%;
+    }
+    .footer_start {
+        background: #FD9616 no-repeat;
+        width: 100%;
+    }
+
+    .footer_start .download_app_title {
+        padding-top: 30px;
+        text-align: center;
+        font-weight: bold;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+    }
+
+    .footer_start .download_section {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .footer_start .download_section img {
+        width: 150px;
+        margin: 5px;
+        border-radius: 10px;
+    }
+    .footer_body {
+        margin-top: 20px;
+        text-align: center;
+        letter-spacing: 0px;
+        color: #919191;
+    }
+    .footer_body p {
+        margin: 5px;
+    }
+    .footer_end {
+        text-align: center;
+    }
+    .footer_end img {
+        width: 50px;
+        margin-top: 20px;
+        margin-left: 10px;
+        box-shadow: -1px 4px 12px #00000042;
+        border-radius: 100%;
+        opacity: 1;
+        margin-bottom: 25px
+    }
+
+    @media screen and (max-width: 426px) {
+        .footer_start {
+            width: 100%;
+        }
+        .container {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-height: 700px) {
+        .container {
+            border: 1px solid #dcdee3;
+        }
+        .footer {
+            position: unset;
+            width: 100%
+        }
+    }

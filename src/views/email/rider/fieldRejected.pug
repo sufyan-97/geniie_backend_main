@@ -1,0 +1,61 @@
+extends ../layout/index.pug 
+
+block append contentStyle
+    style(type='text/css').
+        .section {
+        }
+        .section_head .section_logo {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 30px;
+            width: 30%;
+        }
+        .section_body .setup_business {
+            text-align: center;
+            letter-spacing: 0px;
+            color: #01A1E8;
+        }
+
+        .section_body {
+            text-align: center;
+        }
+
+        .section_body .section_title {
+            font-weight: bold;
+            letter-spacing: 0px;
+            color: #FF3B30;
+        }
+        .section_body h3 {
+
+            text-align: center;
+            letter-spacing: 0px;
+            color: #10100F;
+            opacity: 1;
+        }
+
+        .section_foot {
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        .section_foot a {
+            
+            padding: 10px;
+            background: #01A1E8 0% 0% no-repeat padding-box;
+            border-radius: 8px;
+            opacity: 1;
+            color: white;
+            text-decoration: none;
+        }
+        
+block append section
+    .section
+        .section_head
+            img.section_logo(src=`${host}/images/approvalFailed.png` alt='logo')
+        .section_body
+            h2.section_title Your Application has an issue
+            h3 #{userName}, Your account has not been approved 
+            p.section_pg Please get in touch with one of our team to discuss some of the issues we faced when processing your account. You can contact us through our helpline or via email and we are happy to assist you further with this matter. Our guide to applications can also be found on the link below.
+        .section_foot
+            a(href='') Download Guideline

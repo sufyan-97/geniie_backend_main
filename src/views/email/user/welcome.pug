@@ -1,0 +1,71 @@
+extends ../layout/index.pug 
+
+block append contentStyle
+    style(type='text/css').
+        .section {
+        }
+        .section_head {
+            text-align: center;
+        }
+        .section_head .logo {
+            width: 70%;
+        }
+
+        .section_body {
+            text-align: center;
+        }
+
+        .section_body .setup_business {
+            letter-spacing: 0px;
+            color: #01A1E8;
+        }
+
+        .section_body .para_bold {
+            margin-top: 30px;
+            letter-spacing: 0px;
+            color: #10100F;
+            font-weight: bold;
+        }
+
+        
+        .section_body .para {
+            margin-top: 30px;
+            text-align: center;
+            letter-spacing: 0px;
+            color: #10100F;
+        }
+
+        .section_foot {
+            text-align: center;
+            width: 100%;
+        }
+        .section_foot p.bordered {
+            margin-left: auto;
+            margin-right: auto;
+            background: #01A1E800 0% 0% no-repeat padding-box;
+            border: 3px dashed #01A1E8;
+            border-radius: 8px;
+            opacity: 1;
+            padding: 2px 5px 5px 2px;
+            color: #01A1E8;
+            width: 25%;
+        }
+        .section_foot a {
+            
+            padding: 10px;
+            background: #01A1E8 0% 0% no-repeat padding-box;
+            border-radius: 8px;
+            opacity: 1;
+            color: white;
+            text-decoration: none;
+        }
+block append section
+    .section
+        .section_head
+            img.logo(src=`${host}/images/welcome.png` alt='logo')
+        .section_body
+            h2.title You are now ready to get start
+            p.para_bold #{username}, Welcome to Geniie
+            p.para Your account is now active. So, Your next takeout is just a touch away, And there is fantastic cuisine to be found.
+        .section_foot
+            a(href=`https://geniie.uk`) Order Now
